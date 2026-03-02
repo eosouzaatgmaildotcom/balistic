@@ -3,8 +3,6 @@ A modernized Python ballistics simulator that calculates realistic projectile tr
 
 # Ballistics Simulator: From 90s Turbo Pascal to Modern Python 🚀
 
-
-
 This repository contains the modernized version of a ballistics simulator with aerodynamic drag. The project calculates the trajectory of a projectile, considering air resistance based on the Mach number, and accurately finds the exact firing angles (high and low trajectories) required to hit a target at a specific distance.
 
 ## 📜 Project History
@@ -58,17 +56,17 @@ To fully experience the physics engine of this simulator, try entering the follo
 
 This is the default scenario. It shows the classic two-angle solution (high and low) for a heavy projectile.
 
-Mass: 43.5 kg
-Diameter: 0.155 m
-Initial Velocity (V0): 800 m/s
-Target Range: 15000 m
-Air Density (Rho): 1.225 kg/m³
+* Mass: 43.5 kg
+* Diameter: 0.155 m
+* Initial Velocity (V0): 800 m/s
+* Target Range: 15000 m
+* Air Density (Rho): 1.225 kg/m³
 
 2. The "Impossible" Shot (Out of Range)
 
 Test the algorithm's error handling by trying to hit a target beyond the physical reach of the gun due to air drag.
 
-Target Range: 35000 m
+* Target Range: 35000 m
 
 Observation: The console/UI will inform you that the target cannot be reached with the given initial velocity.
 
@@ -76,8 +74,8 @@ Observation: The console/UI will inform you that the target cannot be reached wi
 
 See how far the projectile goes when drag is removed. The trajectory becomes a perfect mathematical parabola.
 
-Air Density (Rho): 0.001 kg/m³ (near vacuum)
-Target Range: 35000 m
+* Air Density (Rho): 0.001 kg/m³ (near vacuum)
+* Target Range: 35000 m
 
 Observation: Notice how the maximum range increases massively compared to the standard scenario, and the high/low trajectories become perfectly symmetrical.
 
@@ -85,30 +83,30 @@ Observation: Notice how the maximum range increases massively compared to the st
 
 Lighter projectiles lose velocity much faster due to their low mass-to-drag ratio.
 
-Mass: 0.009 kg (9 grams)
-Diameter: 0.00762 m
-Initial Velocity (V0): 850 m/s
-Target Range: 1200 m
+* Mass: 0.009 kg (9 grams)
+* Diameter: 0.00762 m
+* Initial Velocity (V0): 850 m/s
+* Target Range: 1200 m
 
 Observation: The impact velocity will be drastically lower than the launch velocity, showcasing the immense effect of drag on lightweight objects.
 
 ## 🧠 Architecture: Pascal vs. Python
 For legacy code enthusiasts, here are the main architectural transitions:
 
-Feature	Original Version (Turbo Pascal)	Modern Version (Python)
-User Interface	uses crt, graph; (Text mode + BGI graphics)	tkinter integrated with matplotlib
-Numerical Integration	Manually partitioned RK4	scipy.integrate.solve_ivp (RK45/DOP853)
-Angle Search	Custom recursive function achangulo	scipy.optimize.root_scalar (Brent's method)
-Data Output	Screen wipe with Cleardevice + PutPixel	Interactive vector graphic with zoom and export.
+- Feature	Original Version (Turbo Pascal)	Modern Version (Python)
+- User Interface	uses crt, graph; (Text mode + BGI graphics)	tkinter integrated with matplotlib
+- Numerical Integration	Manually partitioned RK4	scipy.integrate.solve_ivp (RK45/DOP853)
+- Angle Search	Custom recursive function achangulo	scipy.optimize.root_scalar (Brent's method)
+- Data Output	Screen wipe with Cleardevice + PutPixel	Interactive vector graphic with zoom and export.
 
 ## 🤝 Contributing
 Feel free to open Issues to report bugs or suggest improvements via Pull Requests. Ideas for future implementations include:
 
-Adding air density variation with altitude (Standard Atmosphere model).
+* Adding air density variation with altitude (Standard Atmosphere model).
 
-Adding the Coriolis effect for extremely long-range calculations.
+* Adding the Coriolis effect for extremely long-range calculations.
 
-Exporting trajectory data to .csv.
+* Exporting trajectory data to .csv.
 
 ## 📄 License
 This project is open-source and available under the MIT License.
