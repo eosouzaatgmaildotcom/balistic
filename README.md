@@ -51,7 +51,7 @@ pip install numpy scipy matplotlib
 4. Run the simulator:
 python balistica_moderna.py
 
-🎯 Interesting Simulation Scenarios
+## 🎯 Interesting Simulation Scenarios
 To fully experience the physics engine of this simulator, try entering the following parameter combinations in the GUI:
 
 1. Standard Heavy Artillery (155mm Howitzer)
