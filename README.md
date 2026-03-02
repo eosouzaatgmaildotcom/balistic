@@ -92,7 +92,7 @@ Target Range: 1200 m
 
 Observation: The impact velocity will be drastically lower than the launch velocity, showcasing the immense effect of drag on lightweight objects.
 
-🧠 Architecture: Pascal vs. Python
+## 🧠 Architecture: Pascal vs. Python
 For legacy code enthusiasts, here are the main architectural transitions:
 
 Feature	Original Version (Turbo Pascal)	Modern Version (Python)
@@ -101,7 +101,7 @@ Numerical Integration	Manually partitioned RK4	scipy.integrate.solve_ivp (RK45/D
 Angle Search	Custom recursive function achangulo	scipy.optimize.root_scalar (Brent's method)
 Data Output	Screen wipe with Cleardevice + PutPixel	Interactive vector graphic with zoom and export.
 
-🤝 Contributing
+## 🤝 Contributing
 Feel free to open Issues to report bugs or suggest improvements via Pull Requests. Ideas for future implementations include:
 
 Adding air density variation with altitude (Standard Atmosphere model).
@@ -110,5 +110,5 @@ Adding the Coriolis effect for extremely long-range calculations.
 
 Exporting trajectory data to .csv.
 
-📄 License
+## 📄 License
 This project is open-source and available under the MIT License.
