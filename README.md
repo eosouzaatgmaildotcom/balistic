@@ -38,9 +38,9 @@ The current version is a modernization that preserves the flawless physical logi
 
 2. Create a virtual environment (Optional, but recommended):
 python -m venv venv
-# On Windows:
+* On Windows:
 venv\Scripts\activate
-# On Linux/Mac:
+* On Linux/Mac:
 source venv/bin/activate
 
 3. Install dependencies:
